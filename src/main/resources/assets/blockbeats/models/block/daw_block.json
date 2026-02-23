@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "particle": "blockbeats:block/daw_block_top",
+    "front": "blockbeats:block/daw_block",
+    "side": "blockbeats:block/daw_block",
+    "top": "blockbeats:block/daw_block_top",
+    "bottom": "blockbeats:block/daw_block"
+  }
+}

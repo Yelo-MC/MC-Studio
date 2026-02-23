@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "blockbeats:block/daw_block",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "blockbeats:block/daw_block",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "blockbeats:block/daw_block",
+      "y": 0
+    },
+    "facing=west": {
+      "model": "blockbeats:block/daw_block",
+      "y": 90
+    }
+  }
+}

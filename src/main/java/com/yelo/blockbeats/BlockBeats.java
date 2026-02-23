@@ -1,5 +1,7 @@
 package com.yelo.blockbeats;
 
+import com.yelo.blockbeats.block.ModBlocks;
+import com.yelo.blockbeats.blockentity.ModBlockEntities;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,5 +13,7 @@ public class BlockBeats implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModBlocks.initialize();
+        ModBlockEntities.initialize();
 	}
 }
