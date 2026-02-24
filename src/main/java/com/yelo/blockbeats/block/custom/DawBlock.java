@@ -2,9 +2,12 @@ package com.yelo.blockbeats.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import com.yelo.blockbeats.blockentity.DawBlockEntity;
+import com.yelo.blockbeats.networking.OpenDawS2CPayload;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
@@ -54,6 +57,10 @@ public class DawBlock extends BaseEntityBlock {
 
     @Override
     protected InteractionResult useWithoutItem(BlockState blockState, Level level, BlockPos blockPos, Player player, BlockHitResult blockHitResult) {
-        return super.useWithoutItem(blockState, level, blockPos, player, blockHitResult);
+        if (!level.isClientSide()) {
+            OpenDawS2CPayload payload = new OpenDawS2CPayload(blockPos);
+            ServerPlayNetworking.send((ServerPlayer) player, payload);
+        }
+        return InteractionResult.SUCCESS;
     }
 }

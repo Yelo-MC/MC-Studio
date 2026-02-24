@@ -13,7 +13,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 public class ModBlockEntities {
     public static BlockEntityType<DawBlockEntity> DAW_BLOCK_ENTITY;
 
-    public static void initialize() {
+    public static void init() {
         DAW_BLOCK_ENTITY = register("daw_block", DawBlockEntity::new, ModBlocks.DAW_BLOCK);
     }
 

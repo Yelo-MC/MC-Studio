@@ -48,7 +48,7 @@ public class ModBlocks {
         return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(BlockBeats.MOD_ID, name));
     }
 
-    public static void initialize() {
+    public static void init() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register((itemGroup) -> {
             itemGroup.accept(ModBlocks.DAW_BLOCK.asItem());
         });
