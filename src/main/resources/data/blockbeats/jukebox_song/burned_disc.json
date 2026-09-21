@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "jukebox_song.blockbeats.burned_disc"
+  },
+  "length_in_seconds": 48.0,
+  "sound_event": "blockbeats:burned_disc_silence"
+}
