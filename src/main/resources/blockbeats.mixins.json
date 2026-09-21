@@ -3,7 +3,8 @@
 	"package": "com.yelo.blockbeats.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"JukeboxBlockEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

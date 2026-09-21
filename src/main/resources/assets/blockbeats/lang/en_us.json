@@ -1,3 +1,12 @@
 {
-  "block.blockbeats.daw_block": "DAW Block"
+  "block.blockbeats.daw_block": "DAW Block",
+  "item.blockbeats.blank_disc": "Blank Disc",
+  "item.blockbeats.burned_disc": "Burned Disc",
+  "itemGroup.blockbeats": "BlockBeats",
+  "container.blockbeats.daw": "DAW",
+  "jukebox_song.blockbeats.burned_disc": "Burned Disc",
+  "key.category.blockbeats.controls": "BlockBeats",
+  "key.blockbeats.play_pause": "Play / Pause",
+  "key.blockbeats.stop": "Stop",
+  "key.blockbeats.loop_mode": "Loop Mode"
 }

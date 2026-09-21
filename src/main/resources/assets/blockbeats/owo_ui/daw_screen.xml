@@ -1,35 +1,172 @@
-<owo-ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/wisp-forest/owo-lib/1.20/owo-ui.xsd">
+<owo-ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/wisp-forest/owo-lib/1.21/owo-ui.xsd">
     <components>
-        <flow-layout direction="vertical">
-            <children> <!--(1)-->
-                <flow-layout direction="vertical"> <!--(2)-->
+        <flow-layout direction="vertical" id="background">
+            <children>
+                <flow-layout direction="vertical" id="window">
                     <children>
-                        <button id="the-button"> <!--(3)-->
-                            <text>A Button</text> <!--(6)-->
-                        </button>
+                        <stack-layout id="transport">
+                            <children>
+                                <flow-layout direction="horizontal" id="transport-left">
+                                    <children>
+                                        <flow-layout direction="horizontal" id="bpm-controls">
+                                            <sizing>
+                                                <horizontal method="content"/>
+                                                <vertical method="content"/>
+                                            </sizing>
+                                            <vertical-alignment>center</vertical-alignment>
+                                        </flow-layout>
+                                        <flow-layout direction="horizontal" id="playback-controls">
+                                            <sizing>
+                                                <horizontal method="content"/>
+                                                <vertical method="content"/>
+                                            </sizing>
+                                            <gap>4</gap>
+                                            <vertical-alignment>center</vertical-alignment>
+                                        </flow-layout>
+                                    </children>
+                                    <sizing>
+                                        <horizontal method="content"/>
+                                        <vertical method="content"/>
+                                    </sizing>
+                                    <gap>4</gap>
+                                    <vertical-alignment>center</vertical-alignment>
+                                </flow-layout>
+                                <flow-layout direction="horizontal" id="recording-controls">
+                                    <sizing>
+                                        <horizontal method="content"/>
+                                        <vertical method="content"/>
+                                    </sizing>
+                                    <gap>4</gap>
+                                    <vertical-alignment>center</vertical-alignment>
+                                </flow-layout>
+                                <flow-layout direction="horizontal" id="song-name-controls">
+                                    <sizing>
+                                        <horizontal method="content"/>
+                                        <vertical method="content"/>
+                                    </sizing>
+                                    <positioning type="relative">50,50</positioning>
+                                </flow-layout>
+                            </children>
+                            <sizing>
+                                <horizontal method="fill">100</horizontal>
+                                <vertical method="content"/>
+                            </sizing>
+                        </stack-layout>
+
+                        <flow-layout direction="horizontal" id="workspace">
+                            <children>
+                                <flow-layout direction="horizontal" id="instrument-panel">
+                                    <children>
+                                        <flow-layout direction="vertical" id="instrument-column-1">
+                                            <sizing>
+                                                <horizontal method="content"/>
+                                                <vertical method="content"/>
+                                            </sizing>
+                                            <gap>3</gap>
+                                        </flow-layout>
+                                        <flow-layout direction="vertical" id="instrument-column-2">
+                                            <sizing>
+                                                <horizontal method="content"/>
+                                                <vertical method="content"/>
+                                            </sizing>
+                                            <gap>3</gap>
+                                        </flow-layout>
+                                    </children>
+                                    <sizing>
+                                        <horizontal method="content"/>
+                                        <vertical method="fixed">236</vertical>
+                                    </sizing>
+                                    <gap>2</gap>
+                                    <vertical-alignment>center</vertical-alignment>
+                                    <padding>
+                                        <all>3</all>
+                                    </padding>
+                                    <surface>
+                                        <panel-inset/>
+                                    </surface>
+                                </flow-layout>
+
+                                <stack-layout id="piano-roll-stack">
+                                    <children>
+                                        <scroll direction="horizontal" id="piano-roll-scroll">
+                                            <flow-layout direction="vertical" id="piano-roll-host">
+                                                <children>
+                                                    <flow-layout direction="vertical" id="piano-roll-panel">
+                                                        <sizing>
+                                                            <horizontal method="content"/>
+                                                            <vertical method="content"/>
+                                                        </sizing>
+                                                        <padding>
+                                                            <all>1</all>
+                                                        </padding>
+                                                    </flow-layout>
+                                                    <flow-layout direction="vertical" id="scrollbar-spacer">
+                                                        <sizing>
+                                                            <horizontal method="fixed">1</horizontal>
+                                                            <vertical method="fixed">9</vertical>
+                                                        </sizing>
+                                                    </flow-layout>
+                                                </children>
+                                                <sizing>
+                                                    <horizontal method="content"/>
+                                                    <vertical method="content"/>
+                                                </sizing>
+                                            </flow-layout>
+                                            <sizing>
+                                                <horizontal method="fill">100</horizontal>
+                                                <vertical method="content"/>
+                                            </sizing>
+                                            <scrollbar-thiccness>8</scrollbar-thiccness>
+                                            <scrollbar>
+                                                <vanilla/>
+                                            </scrollbar>
+                                            <padding>
+                                                <left>1</left>
+                                                <right>1</right>
+                                            </padding>
+                                        </scroll>
+                                    </children>
+                                    <sizing>
+                                        <horizontal method="fill">88</horizontal>
+                                        <vertical method="content"/>
+                                    </sizing>
+                                </stack-layout>
+                            </children>
+                            <sizing>
+                                <horizontal method="fill">100</horizontal>
+                                <vertical method="content"/>
+                            </sizing>
+                            <gap>4</gap>
+                        </flow-layout>
+
+                        <flow-layout direction="horizontal" id="hotbar">
+                            <sizing>
+                                <horizontal method="fill">100</horizontal>
+                                <vertical method="content"/>
+                            </sizing>
+                            <horizontal-alignment>center</horizontal-alignment>
+                        </flow-layout>
                     </children>
-
-                    <horizontal-alignment>center</horizontal-alignment>
-                    <vertical-alignment>center</vertical-alignment>
-
-                    <!--(4)-->
-                    <padding>
-                        <all>10</all>
-                    </padding>
-
+                    <sizing>
+                        <horizontal method="fill">90</horizontal>
+                        <vertical method="content"/>
+                    </sizing>
                     <surface>
-                        <panel dark="true"/>
+                        <panel/>
                     </surface>
+                    <padding>
+                        <all>6</all>
+                    </padding>
+                    <gap>4</gap>
                 </flow-layout>
             </children>
-
-            <vertical-alignment>center</vertical-alignment>
+            <sizing>
+                <horizontal method="fill">100</horizontal>
+                <vertical method="fill">100</vertical>
+            </sizing>
             <horizontal-alignment>center</horizontal-alignment>
-
-            <!--(5)-->
-            <surface>
-                <vanilla-translucent/>
-            </surface>
+            <vertical-alignment>center</vertical-alignment>
         </flow-layout>
     </components>
 </owo-ui>

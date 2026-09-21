@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "blockbeats:item/daw_block"
+    "model": "blockbeats:item/blank_disc"
   }
 }
