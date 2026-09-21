@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "blockbeats:item/blank_disc",
-    "layer1": "blockbeats:item/burned_disc_center"
-  }
-}

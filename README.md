@@ -1,6 +1,6 @@
-# BlockBeats
+# MC Studio
 
-BlockBeats is a Fabric mod for Minecraft that adds a compact digital audio workstation (DAW). Compose note-block music in a piano roll, arrange several instruments on the same grid, and burn the finished song onto a playable music disc.
+MC Studio is a Fabric mod for Minecraft that adds a compact digital audio workstation (DAW). Compose note-block music in a piano roll, arrange several instruments on the same grid, and burn the finished song onto a playable music disc.
 
 ## Features
 
@@ -13,7 +13,7 @@ BlockBeats is a Fabric mod for Minecraft that adds a compact digital audio works
 - Song naming and recording onto a Blank Disc
 - Burned Discs that retain their notes, tempo, creator, song name, and a randomly colored center
 - Burned Disc playback in vanilla jukeboxes
-- A dedicated BlockBeats creative tab
+- A dedicated MC Studio creative tab
 
 ## Using the DAW
 
@@ -37,7 +37,7 @@ While composing, previews and DAW playback are local to the player using the int
 | Stop | Backspace |
 | Toggle loop mode | L |
 
-The keyboard controls are available under the **BlockBeats** category in Minecraft's keybind settings.
+The keyboard controls are available under the **MC Studio** category in Minecraft's keybind settings.
 
 ## Recipes
 
@@ -69,7 +69,7 @@ CIC
 - Fabric API
 - owo-lib 0.13.0 for Minecraft 1.21.11
 
-BlockBeats, Fabric API, and owo-lib are required on both clients and dedicated servers.
+MC Studio, Fabric API, and owo-lib are required on both clients and dedicated servers.
 
 ## Building
 
@@ -89,4 +89,4 @@ The built mod JAR will be placed in `build/libs`.
 
 ## License
 
-BlockBeats is available under the [MIT License](LICENSE).
+MC Studio is available under the [MIT License](LICENSE).

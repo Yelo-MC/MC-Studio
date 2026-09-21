@@ -1,29 +1,28 @@
 {
 	"schemaVersion": 1,
-	"id": "blockbeats",
+	"id": "mcstudio",
 	"version": "${version}",
-	"name": "BlockBeats",
+	"name": "MC Studio",
 	"description": "This mod adds a functionning DAW into Minecraft",
 	"authors": [
 		"Yelo_MC"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Yelo-MC/MC-Studio"
 	},
 	"license": "MIT",
-	"icon": "assets/blockbeats/icon.png",
+	"icon": "assets/mcstudio/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.yelo.blockbeats.BlockBeats"
+			"com.yelo.mcstudio.MCStudio"
 		],
         "client": [
-            "com.yelo.blockbeats.BlockBeatsClient"
+            "com.yelo.mcstudio.MCStudioClient"
         ]
 	},
 	"mixins": [
-		"blockbeats.mixins.json"
+		"mcstudio.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",
