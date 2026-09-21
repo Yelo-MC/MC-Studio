@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "mcstudio:block/daw_block",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "mcstudio:block/daw_block",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "mcstudio:block/daw_block",
+      "y": 0
+    },
+    "facing=west": {
+      "model": "mcstudio:block/daw_block",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "block.mcstudio.daw_block": "DAW Block",
+  "item.mcstudio.blank_disc": "Blank Disc",
+  "item.mcstudio.burned_disc": "Burned Disc",
+  "itemGroup.mcstudio": "MC Studio",
+  "container.mcstudio.daw": "DAW",
+  "jukebox_song.mcstudio.burned_disc": "Burned Disc",
+  "key.category.mcstudio.controls": "MC Studio",
+  "key.mcstudio.play_pause": "Play / Pause",
+  "key.mcstudio.stop": "Stop",
+  "key.mcstudio.loop_mode": "Loop Mode"
+}

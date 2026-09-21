@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mcstudio:item/blank_disc",
+    "layer1": "mcstudio:item/burned_disc_center"
+  }
+}
